@@ -30,6 +30,10 @@ button, select { cursor: pointer; }
 .desktop-nav a::after { content: ""; position: absolute; bottom: 18px; left: 22px; right: 22px; height: 2px; background: var(--ink); transform: scaleX(0); transition: transform .2s ease; }
 .desktop-nav a:hover::after, .desktop-nav a.active::after { transform: scaleX(1); }
 .nav-actions { display: flex; gap: 6px; }
+.language-switch { display: flex; align-items: center; height: 32px; margin: 5px 4px 0 0; border: 1px solid var(--line); border-radius: 99px; padding: 2px; }
+.language-switch button { width: 34px; height: 26px; border: 0; border-radius: 99px; background: transparent; color: var(--muted); font-size: 11px; font-weight: 700; }
+.language-switch button.active { background: var(--ink); color: var(--white); }
+.language-switch button:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
 .icon-button { width: 42px; height: 42px; padding: 0; display: grid; place-items: center; border: 0; background: transparent; border-radius: 50%; }
 .icon-button:hover { background: var(--soft); }
 .menu-button { display: none; }

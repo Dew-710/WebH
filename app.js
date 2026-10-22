@@ -236,6 +236,23 @@ const shops = [
 ];
 
 const districts = ["Hải Châu", "Cẩm Lệ", "Thanh Khê", "An Khê", "An Hải", "Sơn Trà", "Ngũ Hành Sơn", "Hòa Khánh", "Hòa Cường"];
+const i18n = window.PD_I18N;
+const t = value => i18n?.t(value) || value;
+
+if (i18n?.lang === "en") {
+  articles.forEach(article => {
+    const translated = i18n.articles[article.slug];
+    if (!translated) return;
+    article.title = translated.title;
+    article.excerpt = translated.excerpt;
+    article.intro = translated.intro;
+    if (translated.sections) article.sections = translated.sections.map(section => [...section]);
+    if (translated.principles) article.principles = [...translated.principles];
+  });
+  shops.forEach(shop => {
+    if (i18n.shopDescriptions[shop.name]) shop.description = i18n.shopDescriptions[shop.name];
+  });
+}
 
 const page = document.body.dataset.page;
 
@@ -274,6 +291,7 @@ function renderHeader() {
           ${nav.map(([key,label,url]) => `<a class="${page===key ? "active" : ""}" href="${url}">${label}</a>`).join("")}
         </nav>
         <div class="nav-actions">
+          <div class="language-switch" role="group" aria-label="Language"><button type="button" data-language="vi" class="${i18n?.lang === "vi" ? "active" : ""}" aria-pressed="${i18n?.lang === "vi"}">VI</button><button type="button" data-language="en" class="${i18n?.lang === "en" ? "active" : ""}" aria-pressed="${i18n?.lang === "en"}">EN</button></div>
           <button class="icon-button" id="searchOpen" aria-label="Mở tìm kiếm">${icon("search")}</button>
           <button class="icon-button menu-button" id="menuToggle" aria-label="Mở menu" aria-expanded="false">${icon("menu")}</button>
         </div>
@@ -330,6 +348,8 @@ function breadcrumb(items) {
 
 function renderHome() {
   const featured = [articles[0], articles[1]];
+  const mapLanguage = i18n?.lang === "en" ? "en" : "vi";
+  const initialMapQuery = encodeURIComponent(i18n?.lang === "en" ? "piercing Da Nang" : "xỏ khuyên Đà Nẵng");
   document.getElementById("app").innerHTML = `
     <section class="home-hero">
       <div class="container home-hero-grid">
@@ -341,7 +361,7 @@ function renderHome() {
       <div class="container">
         <div class="intro-row"><div class="pin-mark">${icon("pin")}</div><div><h2>Tìm tiệm xỏ khuyên gần bạn</h2><p>Khám phá các tiệm xỏ khuyên tại Đà Nẵng thông qua bản đồ. Chọn phường bạn muốn tìm kiếm để xem danh sách trong khu vực.</p></div></div>
         <div class="map-grid">
-          <div class="map-visual google-map-frame"><iframe id="googleMapEmbed" class="google-map-embed" title="Google Maps các tiệm xỏ khuyên tại Đà Nẵng" src="https://www.google.com/maps?q=x%E1%BB%8F+khuy%C3%AAn+%C4%90%C3%A0+N%E1%BA%B5ng&z=12&output=embed" loading="eager" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe><a class="google-map-open" id="googleMapOpen" href="https://www.google.com/maps/search/?api=1&query=x%E1%BB%8F+khuy%C3%AAn+%C4%90%C3%A0+N%E1%BA%B5ng" target="_blank" rel="noopener noreferrer">Mở Google Maps ↗</a></div>
+          <div class="map-visual google-map-frame"><iframe id="googleMapEmbed" class="google-map-embed" title="Google Maps các tiệm xỏ khuyên tại Đà Nẵng" src="https://www.google.com/maps?q=${initialMapQuery}&z=12&output=embed&hl=${mapLanguage}" loading="eager" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe><a class="google-map-open" id="googleMapOpen" href="https://www.google.com/maps/search/?api=1&query=${initialMapQuery}" target="_blank" rel="noopener noreferrer">Mở Google Maps ↗</a></div>
           <form class="map-filter" id="mapFilterForm" action="search.html">
             <label class="search-field">${icon("search")}<input id="mapSearch" type="search" name="q" placeholder="Tìm theo tên tiệm, địa chỉ..."></label>
             <label><span>${icon("pin")}Phường</span><select id="mapDistrict" name="district"><option value="">Tất cả phường</option>${districts.map(d=>`<option>${d}</option>`).join("")}</select></label>
@@ -606,9 +626,10 @@ function updateGoogleEmbed() {
   if (!frame) return;
   const search = document.getElementById("mapSearch")?.value.trim();
   const district = document.getElementById("mapDistrict")?.value;
-  const query = [search || "xỏ khuyên", district, "Đà Nẵng"].filter(Boolean).join(" ");
+  const english = i18n?.lang === "en";
+  const query = [search || (english ? "piercing" : "xỏ khuyên"), district, english ? "Da Nang" : "Đà Nẵng"].filter(Boolean).join(" ");
   const encoded = encodeURIComponent(query);
-  frame.src = `https://www.google.com/maps?q=${encoded}&z=${district || search ? 14 : 12}&output=embed`;
+  frame.src = `https://www.google.com/maps?q=${encoded}&z=${district || search ? 14 : 12}&output=embed&hl=${english ? "en" : "vi"}`;
   if (openLink) openLink.href = `https://www.google.com/maps/search/?api=1&query=${encoded}`;
   const note = document.getElementById("mapNote");
   if (note) note.innerHTML = `⌖ <em>Google Maps: ${query}</em>`;
@@ -645,6 +666,7 @@ function sidebarCard(article) {
 }
 
 function principleText(i) {
+  if (i18n?.lang === "en") return i18n.principleText[i];
   const text = [
     "Rửa tay sạch trước khi vệ sinh. Dùng nước muối sinh lý 0,9% hoặc dung dịch chuyên dùng, vệ sinh nhẹ nhàng và thấm khô.",
     "Tay tiếp xúc với nhiều vi khuẩn. Chỉ chạm vào trang sức khi thật sự cần thiết và luôn rửa tay trước.",
@@ -669,6 +691,7 @@ function categoryUrl(category) {
 }
 
 function bindInteractions() {
+  document.querySelectorAll("[data-language]").forEach(button => button.addEventListener("click", () => i18n?.setLanguage(button.dataset.language)));
   const menuButton = document.getElementById("menuToggle");
   const panel = document.getElementById("mobilePanel");
   menuButton?.addEventListener("click", ()=>{
@@ -765,4 +788,6 @@ function bindInteractions() {
 renderHeader();
 renderFooter();
 ({home:renderHome,locations:renderLocations,trends:renderTrends,knowledge:renderKnowledge,care:renderCare,search:renderSearch,article:renderArticle}[page] || renderHome)();
+i18n?.translateDOM(document);
+i18n?.observe();
 bindInteractions();
