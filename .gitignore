@@ -1,0 +1,14 @@
+# Reference designs and source documents
+/[1-7] TRANG *.png
+/NỘI DUNG*.docx
+/LOGO.jpeg
+
+# Local visual QA output
+.qa/
+*-desktop.png
+*-mobile.png
+
+# Editor and OS files
+.DS_Store
+Thumbs.db
+.vscode/
