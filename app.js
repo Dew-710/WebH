@@ -419,7 +419,7 @@ function renderLocations() {
 function renderTrends() {
   const newArticles = managedArticles.filter(article => article.category === "Xu hướng");
   document.getElementById("app").innerHTML = `
-    ${hero("Xu hướng xỏ khuyên<br>mới nhất", "Cập nhật những kiểu xỏ khuyên hot nhất hiện nay, cách phối khuyên cá tính và gợi ý phong cách phù hợp với bạn.", "✦ Xu hướng xỏ khuyên", "trend-hero")}
+    ${hero("Xu hướng <br> xỏ khuyên<br>mới nhất", "Cập nhật những kiểu xỏ khuyên hot nhất hiện nay, cách phối khuyên cá tính và gợi ý phong cách phù hợp với bạn.", "✦ Xu hướng xỏ khuyên", "trend-hero")}
     <section class="section"><div class="container">${breadcrumb([["Xu hướng", "trends.html"]])}
       <div class="grid two narrow-grid">${[articles[2],articles[3]].map(card).join("")}</div>
       ${sectionHeading("Khám phá thêm")}
