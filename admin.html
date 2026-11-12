@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Quản trị bài viết Piercing Da Nang.">
+  <link rel="icon" href="data:,">
+  <title>Quản trị bài viết | Piercing Da Nang</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body class="admin-body">
+  <div class="admin-shell">
+    <aside class="admin-sidebar">
+      <a class="admin-brand" href="index.html" aria-label="Về trang chủ">
+        <img src="assets/images/logo-transparent.png" alt="Piercing Da Nang">
+      </a>
+      <nav class="admin-nav" aria-label="Quản trị nội dung">
+        <button class="active" type="button" data-admin-view="editor"><span>+</span> Viết bài mới</button>
+        <button type="button" data-admin-view="articles"><span>▤</span> Bài viết</button>
+        <a href="index.html"><span>↗</span> Xem website</a>
+      </nav>
+      <div class="admin-storage-note">
+        <strong>Lưu trữ cục bộ</strong>
+        <span>Dữ liệu nằm trên trình duyệt này.</span>
+      </div>
+    </aside>
+
+    <main class="admin-main">
+      <header class="admin-topbar">
+        <div>
+          <p class="admin-eyebrow">Piercing Da Nang</p>
+          <h1 id="adminPageTitle">Viết bài mới</h1>
+        </div>
+        <div class="admin-top-actions">
+          <button class="admin-button primary" id="chooseProject" type="button">Chọn thư mục dự án</button>
+          <button class="admin-button secondary" id="syncProject" type="button">Đồng bộ toàn bộ</button>
+          <button class="admin-button secondary" id="exportArticles" type="button">Xuất dữ liệu</button>
+          <label class="admin-button secondary" for="importArticles">Nhập dữ liệu</label>
+          <input id="importArticles" type="file" accept="application/json,.json" hidden>
+        </div>
+      </header>
+
+      <section class="admin-view active" id="editorView" aria-labelledby="adminPageTitle">
+        <form id="articleForm" class="admin-editor">
+          <input id="articleId" type="hidden">
+          <div class="editor-main-column">
+            <div class="admin-panel editor-fields">
+              <label class="admin-field full">
+                <span>Tiêu đề bài viết</span>
+                <input id="articleTitle" type="text" maxlength="160" placeholder="Nhập tiêu đề" required>
+              </label>
+
+              <div class="admin-field-row">
+                <label class="admin-field">
+                  <span>Đường dẫn</span>
+                  <input id="articleSlug" type="text" maxlength="180" placeholder="duong-dan-bai-viet" required>
+                </label>
+                <label class="admin-field">
+                  <span>Chuyên mục</span>
+                  <select id="articleCategory" required>
+                    <option value="Kiến thức">Kiến thức</option>
+                    <option value="Xu hướng">Xu hướng</option>
+                    <option value="Cách chăm sóc">Cách chăm sóc</option>
+                    <option value="Vệ sinh lỗ xỏ">Vệ sinh lỗ xỏ</option>
+                    <option value="Dấu hiệu cần lưu ý">Dấu hiệu cần lưu ý</option>
+                    <option value="Sản phẩm chăm sóc">Sản phẩm chăm sóc</option>
+                    <option value="Kinh nghiệm">Kinh nghiệm</option>
+                    <option value="Địa điểm">Địa điểm</option>
+                  </select>
+                </label>
+              </div>
+
+              <label class="admin-field full">
+                <span>Mô tả ngắn</span>
+                <textarea id="articleExcerpt" rows="3" maxlength="280" placeholder="Nội dung hiển thị trên thẻ bài viết" required></textarea>
+                <small><span id="excerptCount">0</span>/280</small>
+              </label>
+
+              <label class="admin-field full">
+                <span>Mở đầu</span>
+                <textarea id="articleIntro" rows="5" placeholder="Đoạn dẫn mở đầu của bài viết" required></textarea>
+              </label>
+            </div>
+
+            <div class="admin-section-heading">
+              <div>
+                <p class="admin-eyebrow">Nội dung</p>
+                <h2>Các mục trong bài</h2>
+              </div>
+              <button class="admin-button secondary" id="addSection" type="button">+ Thêm mục</button>
+            </div>
+            <div id="sectionList" class="section-list"></div>
+          </div>
+
+          <aside class="editor-side-column">
+            <div class="admin-panel publish-panel">
+              <h2>Xuất bản</h2>
+              <label class="admin-field">
+                <span>Ngày đăng</span>
+                <input id="articleDate" type="date" required>
+              </label>
+              <label class="admin-toggle">
+                <input id="articlePublished" type="checkbox" checked>
+                <span aria-hidden="true"></span>
+                Công khai bài viết
+              </label>
+              <div class="publish-actions">
+                <button class="admin-button primary" type="submit">Lưu và xuất bản</button>
+                <button class="admin-button secondary" id="downloadHtml" type="button">Tải file HTML</button>
+                <button class="admin-button ghost" id="resetArticle" type="button">Làm mới</button>
+              </div>
+            </div>
+
+            <div class="admin-panel media-panel">
+              <h2>Ảnh đại diện</h2>
+              <label class="image-upload" for="articleImage">
+                <img id="imagePreview" src="assets/images/hero-ear.jpg" alt="Xem trước ảnh đại diện">
+                <span>Chọn ảnh</span>
+              </label>
+              <input id="articleImage" type="file" accept="image/jpeg,image/png,image/webp" hidden>
+              <p>Ảnh sẽ được nén và lưu cùng bài viết.</p>
+            </div>
+
+            <div class="admin-panel live-preview">
+              <p class="admin-eyebrow">Xem trước</p>
+              <h2 id="previewTitle">Tiêu đề bài viết</h2>
+              <p id="previewExcerpt">Mô tả ngắn sẽ xuất hiện tại đây.</p>
+              <span id="previewCategory">Kiến thức</span>
+            </div>
+          </aside>
+        </form>
+      </section>
+
+      <section class="admin-view" id="articlesView" aria-labelledby="articlesHeading">
+        <div class="articles-toolbar">
+          <div>
+            <p class="admin-eyebrow">Nội dung đã lưu</p>
+            <h2 id="articlesHeading">Danh sách bài viết</h2>
+          </div>
+          <label class="admin-search">
+            <span aria-hidden="true">⌕</span>
+            <input id="articleSearch" type="search" placeholder="Tìm theo tiêu đề hoặc chuyên mục">
+          </label>
+        </div>
+        <div class="article-table-wrap">
+          <table class="article-table">
+            <thead>
+              <tr><th>Bài viết</th><th>Chuyên mục</th><th>Ngày đăng</th><th>Trạng thái</th><th><span class="sr-only">Thao tác</span></th></tr>
+            </thead>
+            <tbody id="articleTableBody"></tbody>
+          </table>
+          <div class="admin-empty" id="articlesEmpty" hidden>
+            <strong>Chưa có bài viết nào</strong>
+            <span>Tạo bài đầu tiên để bắt đầu.</span>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <div class="admin-toast" id="adminToast" role="status" aria-live="polite"></div>
+  <script src="content/generated-articles.js"></script>
+  <script src="admin.js" defer></script>
+</body>
+</html>

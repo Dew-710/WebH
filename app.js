@@ -206,6 +206,23 @@ const articles = [
   }
 ];
 
+const MANAGED_ARTICLES_KEY = "pd_admin_articles_v1";
+
+function loadManagedArticles() {
+  try {
+    const stored = JSON.parse(localStorage.getItem(MANAGED_ARTICLES_KEY) || "[]");
+    if (!Array.isArray(stored)) return [];
+    return stored.filter(article => article && article.published !== false && article.slug && article.title && Array.isArray(article.sections));
+  } catch {
+    return [];
+  }
+}
+
+const generatedArticles = Array.isArray(window.PD_GENERATED_ARTICLES) ? window.PD_GENERATED_ARTICLES : [];
+const managedArticles = [...new Map([...generatedArticles, ...loadManagedArticles()].map(article => [article.slug, article])).values()]
+  .filter(article => article.published !== false);
+articles.push(...managedArticles);
+
 const shops = [
   {name:"Dr.Emp Piercing - Cô Giang", district:"Hải Châu", rating:4.9, reviews:396, address:"19/6 Cô Giang, phường Hải Châu", hours:"09:00 - 22:00", phone:"0888 815 539", social:"Dr.Emp Piercing", facebook:"https://www.facebook.com/dremppiercing", maps:"https://maps.app.goo.gl/fr6yWXnkEnZrD7Le7", image:"assets/source-media/image3.jpeg", description:"Cơ sở chuyên xỏ khuyên và cung cấp trang sức piercing, có nhiều vị trí xỏ và tư vấn chăm sóc sau xỏ."},
   {name:"Pama Piercing", district:"Hải Châu", rating:5.0, reviews:83, address:"11A Trần Bình Trọng, phường Hải Châu", hours:"09:30 - 20:30", phone:"0987 568 192", social:"Xỏ khuyên Đà Nẵng - Pama piercing", facebook:"https://www.facebook.com/pama.piercing", maps:"https://maps.app.goo.gl/aeQxz7HKfwPSbsyo8", image:"assets/source-media/image4.jpeg", description:"Phù hợp với khách muốn bắt đầu xỏ hoặc xây dựng phong cách tai nhiều lỗ theo cấu trúc riêng."},
@@ -256,7 +273,15 @@ if (i18n?.lang === "en") {
 
 const page = document.body.dataset.page;
 
-function articleUrl(slug) { return `article.html?slug=${encodeURIComponent(slug)}`; }
+function articleUrl(slug) {
+  const article = articles.find(item => item.slug === slug);
+  return article?.staticPath || `article.html?slug=${encodeURIComponent(slug)}`;
+}
+
+function articleImage(article) {
+  const image = article?.image || "hero-ear.jpg";
+  return /^(?:data:|https?:|blob:|\/|assets\/)/i.test(image) ? image : `${ASSET}${image}`;
+}
 
 function icon(name) {
   const paths = {
@@ -324,7 +349,7 @@ function renderFooter() {
 
 function card(article, extraClass="") {
   return `<article class="article-card ${extraClass}">
-    <a class="card-media" href="${articleUrl(article.slug)}"><img src="${ASSET}${article.image}" alt="${article.title}"><span>${article.category}</span></a>
+    <a class="card-media" href="${articleUrl(article.slug)}"><img src="${articleImage(article)}" alt="${article.title}"><span>${article.category}</span></a>
     <div class="card-body">
       <time>${article.date}</time>
       <h3><a href="${articleUrl(article.slug)}">${article.title}</a></h3>
@@ -392,16 +417,19 @@ function renderLocations() {
 }
 
 function renderTrends() {
+  const newArticles = managedArticles.filter(article => article.category === "Xu hướng");
   document.getElementById("app").innerHTML = `
     ${hero("Xu hướng xỏ khuyên<br>mới nhất", "Cập nhật những kiểu xỏ khuyên hot nhất hiện nay, cách phối khuyên cá tính và gợi ý phong cách phù hợp với bạn.", "✦ Xu hướng xỏ khuyên", "trend-hero")}
     <section class="section"><div class="container">${breadcrumb([["Xu hướng", "trends.html"]])}
       <div class="grid two narrow-grid">${[articles[2],articles[3]].map(card).join("")}</div>
       ${sectionHeading("Khám phá thêm")}
       <div class="grid two narrow-grid">${[articles[4],articles[6]].map(card).join("")}</div>
+      ${newArticles.length ? `${sectionHeading("Bài viết mới")}<div class="grid two narrow-grid">${newArticles.map(card).join("")}</div>` : ""}
     </div></section>`;
 }
 
 function renderKnowledge() {
+  const newArticles = managedArticles.filter(article => ["Kiến thức", "Kinh nghiệm"].includes(article.category));
   const stages = [
     ["01", "Giai đoạn chuẩn bị", "Tư vấn - Kiểm tra - Vệ sinh", "prep.jpg", ["Tư vấn vị trí phù hợp với hình dáng khuôn mặt và nhu cầu cá nhân.", "Kiểm tra tình trạng sức khỏe, dị ứng nếu có.", "Vệ sinh vùng da và dụng cụ, đảm bảo vô trùng."], articles[4].slug],
     ["02", "Giai đoạn thực hiện", "Xỏ khuyên", "process.jpg", ["Thực hiện bởi thợ xỏ chuyên nghiệp, giàu kinh nghiệm.", "Sử dụng dụng cụ vô trùng, đảm bảo an toàn.", "Lựa chọn trang sức chất liệu phù hợp."], articles[5].slug],
@@ -413,11 +441,13 @@ function renderKnowledge() {
       <div class="grid three stage-grid">${stages.map(s=>`<article class="stage-card"><div class="stage-head"><b>${s[0]}</b><div><h3>${s[1]}</h3><p>${s[2]}</p></div></div><img src="${ASSET}${s[3]}" alt="${s[1]}"><ul>${s[4].map(i=>`<li>${icon("check")}${i}</li>`).join("")}</ul><a class="button" href="${articleUrl(s[5])}">Xem chi tiết ${icon("arrow")}</a></article>`).join("")}</div>
       ${sectionHeading("Bài viết liên quan")}
       <div class="grid four">${[articles[4],articles[5],articles[6],articles[2]].map(card).join("")}</div>
+      ${newArticles.length ? `${sectionHeading("Bài viết mới")}<div class="grid three">${newArticles.map(card).join("")}</div>` : ""}
     </div></section>`;
 }
 
 function renderCare() {
-  const careArticles = [articles[8], articles[9], articles[10], articles[6], articles[11], articles[7]];
+  const managedCareArticles = managedArticles.filter(article => ["Cách chăm sóc", "Vệ sinh lỗ xỏ", "Dấu hiệu cần lưu ý", "Sản phẩm chăm sóc"].includes(article.category));
+  const careArticles = [...managedCareArticles, articles[8], articles[9], articles[10], articles[6], articles[11], articles[7]];
   document.getElementById("app").innerHTML = `
     ${hero("Chăm sóc lỗ xỏ<br>sau khi xỏ khuyên", "Hướng dẫn chi tiết cách chăm sóc lỗ xỏ đúng cách, giúp lỗ xỏ nhanh lành, hạn chế viêm nhiễm và giữ được vẻ đẹp lâu dài.", "Cách chăm sóc", "care-hero")}
     <section class="section care-content"><div class="container">
@@ -445,7 +475,7 @@ function renderDirectory(compact = false) {
       <aside class="filter-sidebar"><h3>Phường</h3><label>${icon("pin")}<select id="districtSelect"><option value="" ${!district?"selected":""}>Tất cả phường</option>${districts.map(d=>`<option ${district===d?"selected":""}>${d}</option>`).join("")}</select></label><hr><h3>Giờ mở cửa</h3><label><input type="checkbox" name="time" value="morning" ${initialOpen==="morning"?"checked":""}> Sáng (6h - 12h)</label><label><input type="checkbox" name="time" value="afternoon" ${initialOpen==="afternoon"?"checked":""}> Chiều (12h - 18h)</label><label><input type="checkbox" name="time" value="evening" ${initialOpen==="evening"?"checked":""}> Tối (18h - 22h)</label><hr><h3>Đánh giá</h3>${[5,4.9,4.5].map(r=>`<label><input type="checkbox" name="rating" value="${r}" ${initialRating===String(r)?"checked":""}> ${"★".repeat(Math.floor(r))} <span>Từ ${r} sao</span></label>`).join("")}</aside>
       <div class="results-main"><div class="results-top"><h2 id="resultsCount"></h2><label>Sắp xếp theo <select id="sortSelect"><option value="featured">Đánh giá cao nhất</option><option value="rating">Theo điểm số</option><option value="reviews">Nhiều đánh giá nhất</option><option value="name">Tên A-Z</option></select></label></div><div id="shopResults" class="shop-list"></div></div>
     </div></section>
-    <section class="section compact-top"><div class="container">${sectionHeading(`✦ Bài viết liên quan ${district ? `tại phường ${district}` : ""}`, "locations.html")}<div class="grid two">${[articles[0],articles[1]].map(card).join("")}</div></div></section>
+    <section class="section compact-top"><div class="container">${sectionHeading(`✦ Bài viết liên quan ${district ? `tại phường ${district}` : ""}`, "locations.html")}<div class="grid two">${[...managedArticles.filter(article => ["Địa điểm", "Kinh nghiệm"].includes(article.category)), articles[0],articles[1]].slice(0,2).map(card).join("")}</div></div></section>
     <div class="shop-modal" id="shopModal" aria-hidden="true">
       <div class="shop-modal-panel" role="dialog" aria-modal="true" aria-label="Chi tiết tiệm xỏ khuyên">
         <button class="icon-button shop-modal-close" id="shopModalClose" aria-label="Đóng chi tiết">${icon("close")}</button>
@@ -636,7 +666,7 @@ function updateGoogleEmbed() {
 }
 
 function renderArticle() {
-  const slug = new URLSearchParams(location.search).get("slug") || articles[7].slug;
+  const slug = document.body.dataset.articleSlug || new URLSearchParams(location.search).get("slug") || articles[7].slug;
   const article = articles.find(a=>a.slug===slug) || articles[7];
   document.title = `${article.title} | Piercing Da Nang`;
   const sections = article.principles
@@ -653,7 +683,7 @@ function renderArticle() {
         <div class="blog-main">
           <header class="blog-header"><h1>${article.title}</h1><time>${icon("calendar")} ${article.date}</time></header>
           <p class="blog-intro">${article.intro}</p>
-          <img class="blog-hero-image" src="${ASSET}${article.image}" alt="${article.title}">
+          <img class="blog-hero-image" src="${articleImage(article)}" alt="${article.title}">
           <div class="blog-body">${sections}<p class="blog-closing">Hy vọng những gợi ý trên giúp bạn có thêm thông tin để đưa ra lựa chọn phù hợp. Đừng quên tìm hiểu kỹ và ưu tiên sự an toàn trong suốt quá trình xỏ cũng như chăm sóc lỗ xỏ.</p></div>
         </div>
         <aside class="related-sidebar"><h2>Bài viết liên quan</h2>${related.slice(0,2).map(sidebarCard).join("")}</aside>
@@ -662,7 +692,7 @@ function renderArticle() {
 }
 
 function sidebarCard(article) {
-  return `<article class="sidebar-card"><a class="sidebar-media" href="${articleUrl(article.slug)}"><img src="${ASSET}${article.image}" alt="${article.title}"><span>${article.category}</span></a><div><h3><a href="${articleUrl(article.slug)}">${article.title}</a></h3><p>${article.excerpt}</p><a class="text-link" href="${articleUrl(article.slug)}">Đọc thêm ${icon("arrow")}</a></div></article>`;
+  return `<article class="sidebar-card"><a class="sidebar-media" href="${articleUrl(article.slug)}"><img src="${articleImage(article)}" alt="${article.title}"><span>${article.category}</span></a><div><h3><a href="${articleUrl(article.slug)}">${article.title}</a></h3><p>${article.excerpt}</p><a class="text-link" href="${articleUrl(article.slug)}">Đọc thêm ${icon("arrow")}</a></div></article>`;
 }
 
 function principleText(i) {
