@@ -286,7 +286,7 @@ function renderHeader() {
   document.getElementById("site-header").innerHTML = `
     <header class="site-header">
       <div class="container nav-wrap">
-        <a class="brand" href="index.html" aria-label="Piercing Da Nang - Trang chủ"><img src="${ASSET}logo.jpeg" alt="Piercing Da Nang"></a>
+        <a class="brand" href="index.html" aria-label="Piercing Da Nang - Trang chủ"><img src="${ASSET}logo-transparent.png" alt="Piercing Da Nang"></a>
         <nav class="desktop-nav" aria-label="Điều hướng chính">
           ${nav.map(([key,label,url]) => `<a class="${page===key ? "active" : ""}" href="${url}">${label}</a>`).join("")}
         </nav>
@@ -314,7 +314,7 @@ function renderFooter() {
   document.getElementById("site-footer").innerHTML = `
     <footer class="site-footer">
       <div class="container footer-grid">
-        <div class="footer-brand"><img src="${ASSET}logo.jpeg" alt="Piercing Da Nang"><p>Cung cấp thông tin về các địa điểm xỏ khuyên uy tín, kiến thức và hướng dẫn chăm sóc lỗ xỏ tại Đà Nẵng.</p></div>
+        <div class="footer-brand"><img src="${ASSET}logo-transparent.png" alt="Piercing Da Nang"><p>Cung cấp thông tin về các địa điểm xỏ khuyên uy tín, kiến thức và hướng dẫn chăm sóc lỗ xỏ tại Đà Nẵng.</p></div>
         <div><h3>Cam kết</h3><p>${icon("check")}Thông tin chính xác, cập nhật thường xuyên</p><p>${icon("check")}Đánh giá khách quan, minh bạch</p><p>${icon("check")}Vì cộng đồng xỏ khuyên an toàn</p></div>
         <div><h3>Liên hệ</h3><p>${icon("phone")}0936 641 678</p><p>${icon("mail")}piercingdanang@gmail.com</p><p>${icon("pin")}52 Trần Đại Nghĩa, Ngũ Hành Sơn, Đà Nẵng</p></div>
       </div>
