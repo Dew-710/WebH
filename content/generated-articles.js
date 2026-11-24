@@ -5,7 +5,7 @@ window.PD_GENERATED_ARTICLES = [...(window.PD_GENERATED_ARTICLES || []), ...[
     "title": "Cách chăm sóc lỗ xỏ khuyên đúng cách cho người mới",
     "category": "Cách chăm sóc",
     "date": "20.11.2026",
-    "image": "assets/images/hero-ear.jpg",
+    "image": "assets/images/cach-cham-soc-lo-xo-khuyen-dung-cach-cho-nguoi-moi.jpg",
     "excerpt": "Hướng dẫn cách chăm sóc lỗ xỏ khuyên cho người mới: vệ sinh bằng nước muối sinh lý, hạn chế va chạm, thời điểm thay khuyên và nhận biết dấu hiệu nhiễm trùng.",
     "intro": "Xỏ khuyên không chỉ là một cách thể hiện phong cách cá nhân mà còn là quá trình tạo ra một vết thương nhỏ trên cơ thể. Sau khi xỏ, vùng da và mô xung quanh cần thời gian để hồi phục. Trong giai đoạn này, những thói quen tưởng chừng đơn giản như xoay khuyên, chạm tay vào lỗ xỏ hay nằm đè lên tai đều có thể khiến vùng xỏ bị kích ứng và kéo dài thời gian lành thương.\n\nĐặc biệt, với những người lần đầu xỏ khuyên, việc phân biệt giữa phản ứng hồi phục thông thường và dấu hiệu bất thường không phải lúc nào cũng dễ dàng.\n\nVậy chăm sóc lỗ xỏ như thế nào để hạn chế kích ứng và hỗ trợ quá trình hồi phục? Piercing Danang sẽ cùng bạn tìm hiểu những nguyên tắc quan trọng dưới đây.",
     "likes": 0,
@@ -45,7 +45,7 @@ window.PD_GENERATED_ARTICLES = [...(window.PD_GENERATED_ARTICLES || []), ...[
     ],
     "published": true,
     "staticPath": "posts/cach-cham-soc-lo-xo-khuyen-dung-cach-cho-nguoi-moi.html",
-    "updatedAt": "2026-11-21T09:43:07.587Z"
+    "updatedAt": "2026-11-24T09:01:06.990Z"
   },
   {
     "id": "f581714d-b678-41a5-bac3-4d0ed5d10517",
@@ -53,7 +53,7 @@ window.PD_GENERATED_ARTICLES = [...(window.PD_GENERATED_ARTICLES || []), ...[
     "title": "Các vị trí xỏ khuyên tai đẹp và phổ biến hiện nay",
     "category": "Xu hướng",
     "date": "23.10.2026",
-    "image": "assets/images/hero-ear.jpg",
+    "image": "assets/images/cac-vi-tri-xo-khuyen-dep-va-pho-bien-hien-nay.jpg",
     "excerpt": "Khám phá các vị trí xỏ khuyên tai đẹp và phổ biến như Lobe, Helix, Tragus, Conch, Daith, Rook cùng đặc điểm của từng vị trí.",
     "intro": "Không chỉ dừng lại ở vị trí dái tai truyền thống, xỏ khuyên tai hiện nay còn có nhiều lựa chọn ở các vùng sụn với tên gọi và đặc điểm khác nhau. Từ Lobe, Upper Lobe đến Helix, Tragus, Conch hay Daith, mỗi vị trí đều mang đến cách trang trí riêng, giúp đôi tai trở nên nổi bật và thể hiện cá tính. Tuy nhiên, không phải ai cũng hiểu rõ tên gọi cũng như sự khác biệt giữa các khu vực này. Trong bài viết dưới đây, Piercing Danang sẽ tổng hợp những vị trí xỏ khuyên tai phổ biến, đồng thời cung cấp thông tin về cấu tạo tai và các lưu ý sức khỏe liên quan.",
     "likes": 0,
@@ -77,7 +77,7 @@ window.PD_GENERATED_ARTICLES = [...(window.PD_GENERATED_ARTICLES || []), ...[
     ],
     "published": true,
     "staticPath": "posts/cac-vi-tri-xo-khuyen-dep-va-pho-bien-hien-nay.html",
-    "updatedAt": "2026-11-21T09:42:18.727Z"
+    "updatedAt": "2026-11-24T09:01:06.990Z"
   },
   {
     "id": "44f715cb-cbee-4609-ba17-56a2de181583",
@@ -85,7 +85,7 @@ window.PD_GENERATED_ARTICLES = [...(window.PD_GENERATED_ARTICLES || []), ...[
     "title": "Chăm sóc khuyên sau khi xỏ - Lộ trình hồi phục theo từng vị trí và dấu hiệu cần lưu",
     "category": "Cách chăm sóc",
     "date": "01.11.2026",
-    "image": "assets/images/hero-ear.jpg",
+    "image": "assets/images/cham-soc-khuyen-sau-khi-xo-lo-trinh-hoi-phuc-theo-tung-vi-tri-va-dau-hieu-can-luu.jpg",
     "excerpt": "Hướng dẫn chăm sóc khuyên sau khi xỏ với lộ trình hồi phục theo từng vị trí, cách vệ sinh lỗ xỏ đúng cách và nhận biết dấu hiệu nhiễm trùng cần lưu ý.",
     "intro": "Sau khi xỏ khuyên, việc lựa chọn một chiếc khuyên đẹp mới chỉ là bước đầu. Để vị trí xỏ hồi phục ổn định, bạn cần dành thời gian chăm sóc, vệ sinh đúng cách và hạn chế những tác động có thể gây kích ứng trong quá trình lành thương.\nTuy nhiên, không phải ai cũng biết cách chăm sóc lỗ xỏ khuyên phù hợp. Một số người thường xuyên xoay trang sức vì nghĩ rằng điều này giúp lỗ xỏ không bị bít, trong khi người khác lại vệ sinh quá nhiều hoặc sử dụng cồn, oxy già để làm sạch. Những thói quen này có thể khiến vùng xỏ bị kích ứng và ảnh hưởng đến quá trình hồi phục.\nBên cạnh đó, thời gian lành của mỗi vị trí cũng không giống nhau. Dái tai thường hồi phục nhanh hơn sụn tai, trong khi những vị trí như rốn hoặc núm vú có thể cần nhiều tháng để ổn định.\nTrong bài viết này, Piercing Danang sẽ giúp bạn tìm hiểu cách chăm sóc khuyên sau khi xỏ, thời gian hồi phục theo từng vị trí và những dấu hiệu bất thường cần chú ý để chủ động bảo vệ lỗ xỏ trong suốt quá trình hồi phục.",
     "likes": 0,
@@ -117,7 +117,7 @@ window.PD_GENERATED_ARTICLES = [...(window.PD_GENERATED_ARTICLES || []), ...[
     ],
     "published": true,
     "staticPath": "posts/cham-soc-khuyen-sau-khi-xo-lo-trinh-hoi-phuc-theo-tung-vi-tri-va-dau-hieu-can-luu.html",
-    "updatedAt": "2026-11-21T09:41:14.117Z"
+    "updatedAt": "2026-11-24T09:01:06.990Z"
   },
   {
     "id": "ba1a42bf-c6bd-4766-b81e-cfbc1b1fb46d",
@@ -125,7 +125,7 @@ window.PD_GENERATED_ARTICLES = [...(window.PD_GENERATED_ARTICLES || []), ...[
     "title": "Lỗ xỏ khuyên bị chảy máu - Khi nào cần lưu ý?",
     "category": "Cách chăm sóc",
     "date": "17.11.2026",
-    "image": "assets/images/hero-ear.jpg",
+    "image": "assets/images/lo-xo-khuyen-bi-chay-mau-khi-nao-can-luu-y.jpg",
     "excerpt": "Lỗ xỏ khuyên bị chảy máu có bình thường không? Tìm hiểu nguyên nhân, dấu hiệu cần lưu ý và cách chăm sóc để hạn chế tổn thương.",
     "intro": "Sau khi xỏ khuyên, vùng da tại vị trí xỏ có thể xuất hiện một ít máu do mô bị tổn thương trong quá trình thực hiện. Đây có thể là phản ứng thường gặp trong giai đoạn đầu hồi phục, nhưng nếu tình trạng chảy máu kéo dài, tái diễn hoặc đi kèm sưng đau bất thường thì cần được chú ý. Vậy nguyên nhân nào khiến lỗ xỏ khuyên bị chảy máu và cần xử lý như thế nào để hạn chế tổn thương? Hãy cùng Piercing Danang tìm hiểu những dấu hiệu cần lưu ý và cách chăm sóc lỗ xỏ đúng cách trong bài viết dưới đây.",
     "likes": 0,
@@ -153,7 +153,7 @@ window.PD_GENERATED_ARTICLES = [...(window.PD_GENERATED_ARTICLES || []), ...[
     ],
     "published": true,
     "staticPath": "posts/lo-xo-khuyen-bi-chay-mau-khi-nao-can-luu-y.html",
-    "updatedAt": "2026-11-21T09:42:42.686Z"
+    "updatedAt": "2026-11-24T09:01:06.990Z"
   },
   {
     "id": "2cc08dbe-c813-4d17-84a0-bdea2163ac8b",
@@ -161,7 +161,7 @@ window.PD_GENERATED_ARTICLES = [...(window.PD_GENERATED_ARTICLES || []), ...[
     "title": "Lỗ xỏ khuyên có mùi hôi - Nguyên nhân và cách xử lý",
     "category": "Cách chăm sóc",
     "date": "25.10.2026",
-    "image": "assets/images/hero-ear.jpg",
+    "image": "assets/images/lo-xo-khuyen-co-mui-hoi-nguyen-nhan-va-cach-xu-ly.jpg",
     "excerpt": "Lỗ xỏ khuyên có mùi hôi do đâu? Tìm hiểu nguyên nhân từ bã nhờn, tế bào da chết, trang sức và cách vệ sinh, xử lý đúng cách để hạn chế kích ứng, nhiễm trùng.",
     "intro": "Sau một thời gian xỏ khuyên, không ít người nhận thấy khu vực quanh trang sức xuất hiện mùi khó chịu, đặc biệt khi tháo khuyên hoặc vệ sinh tai. Tình trạng này có thể khiến nhiều người lo lắng, không biết lỗ xỏ đang gặp vấn đề gì và liệu có phải dấu hiệu nhiễm trùng hay không.\nTrên thực tế, lỗ xỏ khuyên có mùi hôi không phải lúc nào cũng đồng nghĩa với việc bị nhiễm trùng. Trong nhiều trường hợp, mùi xuất hiện do sự tích tụ của bã nhờn, tế bào da chết, mồ hôi và các chất cặn quanh trang sức. Đây là hiện tượng có thể gặp ở cả những lỗ xỏ đã hồi phục hoàn toàn.\nTuy nhiên, nếu mùi hôi đi kèm với tình trạng sưng đau, nóng đỏ hoặc chảy mủ, bạn không nên chủ quan vì đây có thể là dấu hiệu của nhiễm trùng.\nVậy tại sao lỗ xỏ khuyên có mùi và làm thế nào để xử lý đúng cách? Hãy cùng Piercing Danang tìm hiểu nguyên nhân, cách nhận biết và những khuyến nghị chăm sóc phù hợp trong bài viết dưới đây.",
     "likes": 0,
@@ -189,7 +189,7 @@ window.PD_GENERATED_ARTICLES = [...(window.PD_GENERATED_ARTICLES || []), ...[
     ],
     "published": true,
     "staticPath": "posts/lo-xo-khuyen-co-mui-hoi-nguyen-nhan-va-cach-xu-ly.html",
-    "updatedAt": "2026-11-21T09:41:31.827Z"
+    "updatedAt": "2026-11-24T09:01:06.990Z"
   },
   {
     "id": "6233f550-dd2d-441a-bf83-8490ad933de9",
@@ -197,7 +197,7 @@ window.PD_GENERATED_ARTICLES = [...(window.PD_GENERATED_ARTICLES || []), ...[
     "title": "Những kiểu xỏ khuyên tai được yêu thích hiện nay",
     "category": "Xu hướng",
     "date": "20.11.2026",
-    "image": "assets/images/hero-ear.jpg",
+    "image": "assets/images/nhung-kieu-xo-khuyen-tai-duoc-yeu-thich-hien-nay.jpg",
     "excerpt": "Khám phá 6 kiểu xỏ khuyên tai phổ biến như Lobe, Helix, Conch, Flat, Daith và Tragus. Tìm hiểu đặc điểm từng vị trí để lựa chọn phong cách phù hợp.",
     "intro": "Xỏ khuyên tai không chỉ là một hình thức làm đẹp mà còn là cách thể hiện cá tính thông qua việc kết hợp nhiều vị trí và kiểu trang sức khác nhau. Bên cạnh dái tai truyền thống, những vị trí xỏ ở phần sụn ngày càng được yêu thích nhờ vẻ ngoài độc đáo và khả năng tạo nên nhiều phong cách riêng.\nTuy nhiên, mỗi vị trí xỏ lại có đặc điểm cấu trúc, cách lựa chọn trang sức và thời gian hồi phục khác nhau. Vì vậy, trước khi quyết định xỏ, bạn nên tìm hiểu kỹ để lựa chọn kiểu phù hợp với cấu trúc tai và nhu cầu chăm sóc của bản thân.\nCùng Piercing Danang khám phá 6 kiểu xỏ khuyên tai phổ biến được nhiều người yêu thích hiện nay nhé!",
     "likes": 0,
@@ -237,7 +237,7 @@ window.PD_GENERATED_ARTICLES = [...(window.PD_GENERATED_ARTICLES || []), ...[
     ],
     "published": true,
     "staticPath": "posts/nhung-kieu-xo-khuyen-tai-duoc-yeu-thich-hien-nay.html",
-    "updatedAt": "2026-11-21T09:43:18.057Z"
+    "updatedAt": "2026-11-24T09:01:06.990Z"
   },
   {
     "id": "e0d90ba5-3a81-46b6-9a18-5ebcabd3e5e1",
@@ -245,7 +245,7 @@ window.PD_GENERATED_ARTICLES = [...(window.PD_GENERATED_ARTICLES || []), ...[
     "title": "Phong cách xỏ khuyên đẹp - Gợi ý cách phối khuyên cá tính",
     "category": "Xu hướng",
     "date": "20.10.2026",
-    "image": "assets/images/phong-cach-xo-khuyen-dep-goi-y-cach-phoi-khuyen-ca-tinh.webp",
+    "image": "assets/images/phong-cach-xo-khuyen-dep-goi-y-cach-phoi-khuyen-ca-tinh.jpg",
     "excerpt": "Khám phá các phong cách xỏ khuyên đẹp, từ tối giản đến cá tính, cùng bí quyết lựa chọn và phối khuyên tai hài hòa theo dáng tai, màu sắc và chất liệu.",
     "intro": "Xỏ khuyên không chỉ là cách làm đẹp mà còn giúp thể hiện cá tính và gu thẩm mỹ riêng. Từ những chiếc khuyên nhỏ tối giản đến cách kết hợp nhiều vị trí xỏ độc đáo, mỗi phong cách đều mang đến một dấu ấn khác biệt. Tuy nhiên, để có tổng thể hài hòa, bạn cần cân nhắc kiểu dáng, màu sắc, chất liệu và cấu tạo tai. Cùng khám phá những phong cách xỏ khuyên đẹp và cách phối khuyên tai phù hợp nhé!",
     "likes": 0,
@@ -273,7 +273,7 @@ window.PD_GENERATED_ARTICLES = [...(window.PD_GENERATED_ARTICLES || []), ...[
     ],
     "published": true,
     "staticPath": "posts/phong-cach-xo-khuyen-dep-goi-y-cach-phoi-khuyen-ca-tinh.html",
-    "updatedAt": "2026-11-21T09:40:38.087Z"
+    "updatedAt": "2026-11-24T09:01:06.990Z"
   },
   {
     "id": "406e2e98-6feb-45e9-83d6-4cea45a7fd8a",
@@ -281,7 +281,7 @@ window.PD_GENERATED_ARTICLES = [...(window.PD_GENERATED_ARTICLES || []), ...[
     "title": "Tiệm xỏ khuyên Đà Nẵng - Kinh nghiệm lựa chọn địa chỉ uy tín",
     "category": "Địa điểm",
     "date": "20.11.2026",
-    "image": "assets/images/hero-ear.jpg",
+    "image": "assets/images/tiem-xo-khuyen-da-nang-kinh-nghiem-lua-chon-dia-chi-uy-tin.jpg",
     "excerpt": "Tìm tiệm xỏ khuyên Đà Nẵng uy tín? Khám phá 5 tiêu chí lựa chọn địa chỉ an toàn dựa trên quy trình vệ sinh, tay nghề, trang sức và đánh giá khách hàng.",
     "intro": "Xỏ khuyên ngày càng trở thành hình thức làm đẹp được nhiều bạn trẻ tại Đà Nẵng yêu thích. Từ những vị trí quen thuộc như Lobe đến các kiểu xỏ sụn cá tính như Helix, Conch hay Flat, mỗi lựa chọn đều mang đến một phong cách riêng. Tuy nhiên, để có trải nghiệm xỏ khuyên an toàn, việc tìm được địa chỉ thực hiện phù hợp cũng quan trọng không kém việc lựa chọn kiểu xỏ.\nMột tiệm xỏ khuyên chuyên nghiệp không chỉ cần có nhiều mẫu trang sức đẹp mà còn phải đảm bảo quy trình vệ sinh, kỹ thuật thực hiện và hướng dẫn chăm sóc sau khi xỏ. Vậy làm thế nào để lựa chọn được tiệm xỏ khuyên Đà Nẵng đáng tin cậy? Dưới đây là những kinh nghiệm bạn nên tham khảo trước khi quyết định.",
     "likes": 0,
@@ -309,7 +309,7 @@ window.PD_GENERATED_ARTICLES = [...(window.PD_GENERATED_ARTICLES || []), ...[
     ],
     "published": true,
     "staticPath": "posts/tiem-xo-khuyen-da-nang-kinh-nghiem-lua-chon-dia-chi-uy-tin.html",
-    "updatedAt": "2026-11-21T09:43:28.917Z"
+    "updatedAt": "2026-11-24T09:01:06.990Z"
   },
   {
     "id": "6b4cfb9f-a395-4427-90d7-3c26431c008e",
@@ -317,7 +317,7 @@ window.PD_GENERATED_ARTICLES = [...(window.PD_GENERATED_ARTICLES || []), ...[
     "title": "Tiệm xỏ khuyên gần đây ở Đà Nẵng - Cách tìm địa chỉ phù hợp và an toàn",
     "category": "Địa điểm",
     "date": "07.10.2026",
-    "image": "assets/images/hero-ear.jpg",
+    "image": "assets/images/tiem-xo-khuyen-gan-day-o-da-nang-cach-tim-dia-chi-phu-hop-va-an-toan.jpg",
     "excerpt": "Tìm tiệm xỏ khuyên gần đây ở Đà Nẵng bằng Google Maps và khám phá 5 tiêu chí lựa chọn địa chỉ phù hợp, an toàn và chuyên nghiệp.",
     "intro": "Bạn đang muốn làm mới phong cách bằng một chiếc khuyên tai cá tính nhưng chưa biết nên thực hiện ở đâu? Chỉ cần tìm kiếm cụm từ \"tiệm xỏ khuyên gần đây\", bạn có thể tiếp cận nhiều địa chỉ thông qua Google hoặc Google Maps. Tuy nhiên, một cơ sở nằm gần vị trí của bạn chưa chắc đã là lựa chọn phù hợp.\nBên cạnh khoảng cách di chuyển, bạn cần quan tâm đến kỹ thuật thực hiện, dụng cụ, quy trình vệ sinh và chất liệu trang sức. Việc tìm hiểu những yếu tố này sẽ giúp bạn có thêm cơ sở đánh giá trước khi quyết định lựa chọn địa chỉ xỏ khuyên tại Đà Nẵng.",
     "likes": 0,
@@ -349,7 +349,7 @@ window.PD_GENERATED_ARTICLES = [...(window.PD_GENERATED_ARTICLES || []), ...[
     ],
     "published": true,
     "staticPath": "posts/tiem-xo-khuyen-gan-day-o-da-nang-cach-tim-dia-chi-phu-hop-va-an-toan.html",
-    "updatedAt": "2026-11-21T09:41:53.457Z"
+    "updatedAt": "2026-11-24T09:01:06.990Z"
   },
   {
     "id": "616ee9fa-cfc5-41e0-9436-2cde9b51d16e",
@@ -357,7 +357,7 @@ window.PD_GENERATED_ARTICLES = [...(window.PD_GENERATED_ARTICLES || []), ...[
     "title": "Xỏ khuyên có cần kiêng gì không? Những điều cần lưu ý sau khi xỏ",
     "category": "Kiến thức",
     "date": "05.11.2026",
-    "image": "assets/images/hero-ear.jpg",
+    "image": "assets/images/xo-khuyen-co-can-kieng-gi-khong-nhung-dieu-can-luu-y-sau-khi-xo.jpg",
     "excerpt": "Xỏ khuyên có cần kiêng gì không? Tìm hiểu những điều cần tránh về ăn uống, vệ sinh, vận động và chăm sóc lỗ xỏ để hạn chế kích ứng, nhiễm trùng và hỗ trợ quá trình hồi phục.",
     "intro": "Xỏ khuyên không chỉ là một cách làm đẹp mà còn là hình thức thể hiện cá tính thông qua những món trang sức trên cơ thể. Tuy nhiên, sau khi xỏ, vùng da tại vị trí thực hiện cần thời gian để hồi phục. Trong giai đoạn này, việc chăm sóc đúng cách và hạn chế những tác động không phù hợp đóng vai trò quan trọng đối với quá trình lành thương.\nĐối với người lần đầu trải nghiệm piercing, những câu hỏi như có cần kiêng thịt bò, thịt gà, hải sản hay không, có được gội đầu, tập thể dục và thay trang sức không thường gây ra nhiều băn khoăn. Bên cạnh đó, không ít người còn áp dụng các kinh nghiệm truyền miệng mà chưa tìm hiểu cơ sở chuyên môn.\nTheo Hiệp hội những người hành nghề xỏ khuyên chuyên nghiệp (Association of Professional Piercers – APP), chăm sóc sau khi xỏ cần chú trọng vệ sinh, hạn chế tác động lên trang sức và tránh những yếu tố có thể gây kích ứng vùng mô đang hồi phục.\nVậy thực tế sau khi xỏ khuyên cần kiêng những gì? Hãy cùng Piercing Danang tìm hiểu các khuyến nghị chăm sóc và những lưu ý quan trọng trong bài viết dưới đây.",
     "likes": 0,
@@ -389,7 +389,7 @@ window.PD_GENERATED_ARTICLES = [...(window.PD_GENERATED_ARTICLES || []), ...[
     ],
     "published": true,
     "staticPath": "posts/xo-khuyen-co-can-kieng-gi-khong-nhung-dieu-can-luu-y-sau-khi-xo.html",
-    "updatedAt": "2026-11-21T09:41:22.077Z"
+    "updatedAt": "2026-11-24T09:01:06.990Z"
   },
   {
     "id": "5fed4006-9bdf-4481-8621-3e11f5f5e78c",
@@ -397,7 +397,7 @@ window.PD_GENERATED_ARTICLES = [...(window.PD_GENERATED_ARTICLES || []), ...[
     "title": "Xỏ khuyên có đi bơi được không? Những điều cần biết sau khi xỏ",
     "category": "Cách chăm sóc",
     "date": "25.10.2026",
-    "image": "assets/images/hero-ear.jpg",
+    "image": "assets/images/xo-khuyen-co-di-boi-duoc-khong-nhung-dieu-can-biet-sau-khi-xo.jpg",
     "excerpt": "Xỏ khuyên có đi bơi được không? Tìm hiểu thời gian hồi phục, những rủi ro khi tiếp xúc với nước hồ bơi, nước biển và cách chăm sóc lỗ xỏ an toàn.",
     "intro": "Sau khi xỏ khuyên, nhiều người thường băn khoăn liệu có thể đi bơi, tắm biển hoặc tham gia các hoạt động dưới nước như bình thường hay không. Đặc biệt vào mùa hè, việc phải hạn chế bơi lội có thể gây bất tiện cho những ai yêu thích du lịch và các hoạt động ngoài trời.\n\nTuy nhiên, lỗ xỏ mới là vùng mô đang trong quá trình hồi phục, vì vậy việc tiếp xúc với nước hồ bơi, nước biển hoặc nguồn nước tự nhiên có thể làm tăng nguy cơ nhiễm khuẩn và kích ứng. Vậy xỏ khuyên bao lâu thì được đi bơi? Làm thế nào để nhận biết lỗ xỏ đã lành và chăm sóc đúng cách? Cùng Piercing Danang tìm hiểu những thông tin cần thiết trong bài viết dưới đây nhé!",
     "likes": 0,
@@ -421,7 +421,7 @@ window.PD_GENERATED_ARTICLES = [...(window.PD_GENERATED_ARTICLES || []), ...[
     ],
     "published": true,
     "staticPath": "posts/xo-khuyen-co-di-boi-duoc-khong-nhung-dieu-can-biet-sau-khi-xo.html",
-    "updatedAt": "2026-11-21T09:41:05.977Z"
+    "updatedAt": "2026-11-24T09:01:06.990Z"
   },
   {
     "id": "ef7c2b76-3f70-47bc-94e5-19c9b12b2c7b",
@@ -429,7 +429,7 @@ window.PD_GENERATED_ARTICLES = [...(window.PD_GENERATED_ARTICLES || []), ...[
     "title": "Xỏ khuyên hay bấm khuyên đau hơn? Những điều bạn nên biết",
     "category": "Kiến thức",
     "date": "20.11.2026",
-    "image": "assets/images/hero-ear.jpg",
+    "image": "assets/images/xo-khuyen-hay-bam-khuyen-dau-hon-nhung-dieu-ban-nen-biet.jpg",
     "excerpt": "Xỏ khuyên hay bấm khuyên đau hơn? Tìm hiểu sự khác biệt về kỹ thuật, mức độ đau, độ an toàn và cách chăm sóc sau khi xỏ để lựa chọn phù hợp.",
     "intro": "Xỏ khuyên và bấm khuyên đều là những phương pháp phổ biến để tạo lỗ đeo trang sức và thể hiện phong cách cá nhân. Tuy nhiên, với những người lần đầu thực hiện, câu hỏi thường gặp là xỏ khuyên hay bấm khuyên đau hơn, phương pháp nào an toàn hơn và có thể hạn chế tổn thương mô tốt hơn?\nTrên thực tế, cảm giác đau không giống nhau ở tất cả mọi người. Mức độ đau còn phụ thuộc vào vị trí thực hiện, kỹ thuật của người xỏ, dụng cụ được sử dụng và ngưỡng chịu đau của mỗi cá nhân. Bên cạnh cảm giác đau tức thời, bạn cũng cần quan tâm đến nguy cơ tổn thương mô, điều kiện vệ sinh và quá trình chăm sóc sau khi thực hiện.",
     "likes": 0,
@@ -465,7 +465,7 @@ window.PD_GENERATED_ARTICLES = [...(window.PD_GENERATED_ARTICLES || []), ...[
     ],
     "published": true,
     "staticPath": "posts/xo-khuyen-hay-bam-khuyen-dau-hon-nhung-dieu-ban-nen-biet.html",
-    "updatedAt": "2026-11-21T09:42:56.307Z"
+    "updatedAt": "2026-11-24T09:01:06.990Z"
   },
   {
     "id": "c1e07447-c1c2-4636-b77d-626b6795eb8d",
@@ -473,7 +473,7 @@ window.PD_GENERATED_ARTICLES = [...(window.PD_GENERATED_ARTICLES || []), ...[
     "title": "Xỏ khuyên kiêng rượu bia bao lâu? Những lưu ý sau khi xỏ khuyên",
     "category": "Kiến thức",
     "date": "19.11.2026",
-    "image": "assets/images/hero-ear.jpg",
+    "image": "assets/images/xo-khuyen-kieng-ruou-bia-bao-lau-nhung-luu-y-sau-khi-xo-khuyen.jpg",
     "excerpt": "Xỏ khuyên kiêng rượu bia bao lâu? Tìm hiểu thời gian nên tránh đồ uống có cồn và những lưu ý chăm sóc sau khi xỏ khuyên.",
     "intro": "Sau khi xỏ khuyên, bên cạnh việc vệ sinh và chăm sóc vị trí mới xỏ, chế độ sinh hoạt cũng là yếu tố cần được quan tâm trong quá trình hồi phục. Một trong những thắc mắc thường gặp là liệu có cần kiêng rượu bia sau khi xỏ khuyên hay không và nên tránh trong bao lâu. Việc sử dụng đồ uống có cồn trong giai đoạn này có thể ảnh hưởng đến quá trình phục hồi của cơ thể, đặc biệt nếu sử dụng quá mức. Trong bài viết này, Piercing Danang sẽ giúp bạn tìm hiểu thời gian nên tránh rượu bia, lý do cần hạn chế và những lưu ý quan trọng để chăm sóc lỗ xỏ đúng cách.",
     "likes": 0,
@@ -493,7 +493,7 @@ window.PD_GENERATED_ARTICLES = [...(window.PD_GENERATED_ARTICLES || []), ...[
     ],
     "published": true,
     "staticPath": "posts/xo-khuyen-kieng-ruou-bia-bao-lau-nhung-luu-y-sau-khi-xo-khuyen.html",
-    "updatedAt": "2026-11-21T09:42:26.307Z"
+    "updatedAt": "2026-11-24T09:01:06.990Z"
   },
   {
     "id": "15a2be57-22b7-4a69-b408-2fba4cefd300",
@@ -501,7 +501,7 @@ window.PD_GENERATED_ARTICLES = [...(window.PD_GENERATED_ARTICLES || []), ...[
     "title": "Xỏ khuyên sụn tai bao lâu thì lành? Thời gian hồi phục và cách chăm sóc",
     "category": "Cách chăm sóc",
     "date": "10.11.2026",
-    "image": "assets/images/hero-ear.jpg",
+    "image": "assets/images/xo-khuyen-sun-tai-bao-lau-thi-lanh-thoi-gian-hoi-phuc-va-cach-cham-soc.jpg",
     "excerpt": "Xỏ khuyên sụn tai bao lâu thì lành? Tìm hiểu thời gian hồi phục, các giai đoạn lành lỗ xỏ, cách chăm sóc và dấu hiệu nhiễm trùng cần lưu ý.",
     "intro": "Xỏ khuyên sụn tai là lựa chọn được nhiều người yêu thích nhờ vẻ ngoài cá tính và khả năng kết hợp đa dạng trang sức. Những vị trí như Helix, Tragus hay Conch không chỉ tạo điểm nhấn cho đôi tai mà còn giúp thể hiện phong cách riêng. Tuy nhiên, do sụn tai có cấu trúc khác với dái tai nên quá trình hồi phục thường kéo dài hơn và đòi hỏi sự chăm sóc cẩn thận.\nVậy xỏ khuyên sụn tai bao lâu thì lành? Trong thời gian hồi phục cần lưu ý những gì và làm sao nhận biết lỗ xỏ đang gặp vấn đề? Bài viết dưới đây sẽ giúp bạn hiểu rõ hơn về quá trình lành lỗ xỏ và cách chăm sóc phù hợp.",
     "likes": 0,
@@ -533,6 +533,6 @@ window.PD_GENERATED_ARTICLES = [...(window.PD_GENERATED_ARTICLES || []), ...[
     ],
     "published": true,
     "staticPath": "posts/xo-khuyen-sun-tai-bao-lau-thi-lanh-thoi-gian-hoi-phuc-va-cach-cham-soc.html",
-    "updatedAt": "2026-11-21T09:41:40.697Z"
+    "updatedAt": "2026-11-24T09:01:06.990Z"
   }
 ]];

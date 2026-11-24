@@ -219,7 +219,17 @@ function loadManagedArticles() {
 }
 
 const generatedArticles = Array.isArray(window.PD_GENERATED_ARTICLES) ? window.PD_GENERATED_ARTICLES : [];
-const managedArticles = [...new Map([...generatedArticles, ...loadManagedArticles()].map(article => [article.slug, article])).values()]
+const localArticles = loadManagedArticles();
+const managedArticlesBySlug = new Map(generatedArticles.map(article => [article.slug, article]));
+
+localArticles.forEach(article => {
+  const generated = managedArticlesBySlug.get(article.slug);
+  const localUpdatedAt = Date.parse(article.updatedAt || "") || 0;
+  const generatedUpdatedAt = Date.parse(generated?.updatedAt || "") || 0;
+  if (!generated || localUpdatedAt > generatedUpdatedAt) managedArticlesBySlug.set(article.slug, article);
+});
+
+const managedArticles = [...managedArticlesBySlug.values()]
   .filter(article => article.published !== false);
 articles.push(...managedArticles);
 
@@ -414,6 +424,10 @@ function renderHome() {
 
 function renderLocations() {
   renderDirectory(true);
+  document.getElementById("app").insertAdjacentHTML("afterbegin", `
+    <section class="locations-article-hero">
+      <img src="${ASSET}dia-diem-xo-khuyen-da-nang.jpg" alt="Địa điểm xỏ khuyên Đà Nẵng - Gợi ý các tiệm đáng tham khảo">
+    </section>`);
 }
 
 function renderTrends() {
