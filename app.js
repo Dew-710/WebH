@@ -2,21 +2,36 @@ const ASSET = "assets/images/";
 
 const articles = [
   {
-    slug: "top-tiem-xo-khuyen-hai-chau",
-    title: "Top tiệm xỏ khuyên uy tín tại Hải Châu, Đà Nẵng",
-    category: "Địa điểm",
-    date: "12.06.2025",
-    image: "ear-card.jpg",
-    excerpt: "Tổng hợp các tiệm xỏ khuyên uy tín tại quận Hải Châu, địa chỉ, dịch vụ và những lưu ý quan trọng.",
-    likes: 102,
-    intro: "Hải Châu là khu vực tập trung nhiều studio piercing ở Đà Nẵng. Danh sách này được tổng hợp theo mức độ chuyên môn, phản hồi của khách hàng và sự minh bạch trong quy trình vệ sinh.",
-    sections: [
-      ["Tiêu chí lựa chọn", "Một tiệm xỏ khuyên đáng cân nhắc cần công khai quy trình vô trùng, sử dụng kim dùng một lần, tư vấn chất liệu trang sức rõ ràng và hướng dẫn chăm sóc sau xỏ. Đánh giá trực tuyến là nguồn tham khảo, nhưng trải nghiệm tư vấn trực tiếp vẫn rất quan trọng."],
-      ["Dr.Emp Piercing", "Cơ sở tại 19/6 Cô Giang được nhiều khách hàng lựa chọn nhờ danh mục vị trí xỏ đa dạng và đội ngũ kỹ thuật viên có kinh nghiệm. Thời gian hoạt động từ 09:00 đến 22:00 thuận tiện cho khách đặt lịch sau giờ làm."],
-      ["Pama Piercing", "Pama phù hợp với người muốn bắt đầu xỏ hoặc xây dựng phong cách tai nhiều lỗ. Tiệm có thế mạnh ở khâu tư vấn cách phối vị trí xỏ theo cấu trúc tai và gu cá nhân."],
-      ["Beo Piercing and Toothgems", "Beo kết hợp piercing và tooth gems, hướng đến nhóm khách yêu thích phong cách làm đẹp cá tính. Không gian và lựa chọn trang sức tạo điều kiện để khách hoàn thiện một tổng thể riêng."],
-      ["Lưu ý trước khi đặt lịch", "Hãy hỏi trước về chất liệu khuyên, chính sách tái khám, thời gian lành dự kiến và cách xử lý nếu xuất hiện dấu hiệu bất thường. Không nên chọn tiệm chỉ dựa trên mức giá thấp."]
-    ]
+    "id": "5fed4006-9bdf-4481-8621-3e11f5f5e78c",
+    "slug": "xo-khuyen-co-di-boi-duoc-khong-nhung-dieu-can-biet-sau-khi-xo",
+    "title": "Xỏ khuyên có đi bơi được không? Những điều cần biết sau khi xỏ",
+    "category": "Cách chăm sóc",
+    "date": "25.10.2026",
+    "image": "assets/images/xo-khuyen-co-di-boi-duoc-khong-nhung-dieu-can-biet-sau-khi-xo.jpg",
+    "excerpt": "Xỏ khuyên có đi bơi được không? Tìm hiểu thời gian hồi phục, những rủi ro khi tiếp xúc với nước hồ bơi, nước biển và cách chăm sóc lỗ xỏ an toàn.",
+    "intro": "Sau khi xỏ khuyên, nhiều người thường băn khoăn liệu có thể đi bơi, tắm biển hoặc tham gia các hoạt động dưới nước như bình thường hay không. Đặc biệt vào mùa hè, việc phải hạn chế bơi lội có thể gây bất tiện cho những ai yêu thích du lịch và các hoạt động ngoài trời.\n\nTuy nhiên, lỗ xỏ mới là vùng mô đang trong quá trình hồi phục, vì vậy việc tiếp xúc với nước hồ bơi, nước biển hoặc nguồn nước tự nhiên có thể làm tăng nguy cơ nhiễm khuẩn và kích ứng. Vậy xỏ khuyên bao lâu thì được đi bơi? Làm thế nào để nhận biết lỗ xỏ đã lành và chăm sóc đúng cách? Cùng Piercing Danang tìm hiểu những thông tin cần thiết trong bài viết dưới đây nhé!",
+    "likes": 0,
+    "sections": [
+      [
+        "Xỏ khuyên có đi bơi được không?",
+        "Câu trả lời là không nên đi bơi khi vị trí xỏ khuyên vẫn đang trong quá trình hồi phục. Khuyến nghị này áp dụng đối với cả hồ bơi, biển, sông, hồ tự nhiên và những môi trường nước có thể khiến vùng xỏ bị ngâm trong thời gian dài.\nTheo Association of Professional Piercers (APP), người mới xỏ khuyên nên tránh ngâm vùng xỏ đang hồi phục trong các môi trường nước như hồ bơi, đại dương, hồ nước, sông và bồn tắm nước nóng. Mayo Clinic cũng khuyến cáo tránh bơi tại hồ bơi, bồn tắm nóng, sông và hồ trong suốt quá trình hồi phục của vùng xỏ.\nNguyên nhân là vì vị trí xỏ khuyên mới vẫn đang trong quá trình tái tạo mô. Khi tiếp xúc với môi trường nước không vô khuẩn, vùng tổn thương có thể tiếp xúc với vi sinh vật và những yếu tố gây kích ứng, từ đó làm tăng nguy cơ gặp biến chứng.\nĐiều quan trọng cần hiểu là không có một mốc thời gian đi bơi áp dụng chung cho tất cả vị trí xỏ khuyên. Thời gian hồi phục phụ thuộc vào vị trí xỏ, tình trạng mô, cơ địa và cách chăm sóc của mỗi người.\n1.1. Đi bơi ở hồ bơi có an toàn sau khi xỏ khuyên không?\nNhiều người cho rằng hồ bơi được xử lý bằng clo nên nước sẽ sạch và không gây ảnh hưởng đến vị trí xỏ khuyên. Tuy nhiên, đây là một quan niệm chưa chính xác.\nClo được sử dụng trong hồ bơi nhằm kiểm soát vi sinh vật và duy trì chất lượng nước. Tuy nhiên, điều đó không có nghĩa hồ bơi trở thành môi trường vô khuẩn hoặc hoàn toàn không có nguy cơ đối với vùng da đang hồi phục.\nNgoài nguy cơ tiếp xúc với vi sinh vật trong nước, các thành phần hóa chất dùng để xử lý hồ bơi cũng có thể gây kích ứng đối với một số người. Khi vùng xỏ vẫn còn nhạy cảm, việc tiếp xúc với môi trường nước trong thời gian dài có thể khiến vùng da khó chịu hơn.\nVì vậy, dù hồ bơi được vệ sinh và xử lý nước thường xuyên, bạn vẫn nên tránh ngâm vùng xỏ khuyên mới cho đến khi hồi phục hoàn toàn.\n1.2. Xỏ khuyên xong có được tắm biển không?\nNước biển thường được nhiều người liên tưởng đến khả năng sát khuẩn nhờ thành phần muối tự nhiên. Tuy nhiên, nước biển không phải dung dịch vệ sinh y tế và cũng không phải môi trường vô khuẩn.\nTrong môi trường biển, nước có thể chứa nhiều loại vi sinh vật cùng các yếu tố tự nhiên khác. Khi vùng xỏ chưa hồi phục, việc tiếp xúc trực tiếp với nguồn nước này có thể làm tăng nguy cơ nhiễm khuẩn.\nTheo hướng dẫn chăm sóc sau xỏ khuyên của APP, người mới xỏ nên tránh ngâm vùng xỏ đang hồi phục trong đại dương cũng như những nguồn nước tự nhiên khác.\nDo đó, không nên sử dụng suy nghĩ rằng nước biển có muối nên sẽ giúp sát khuẩn để biện minh cho việc đi bơi sau khi xỏ khuyên.\n1.3. Đi tắm thông thường có giống với đi bơi không?\nĐây là hai hoạt động cần được phân biệt rõ.\nViệc tiếp xúc với nước sạch trong lúc tắm vòi sen không giống với việc ngâm toàn bộ vùng xỏ trong hồ bơi hoặc biển. Khi tắm, nước thường chảy qua vị trí xỏ và không khiến vùng này phải ngâm liên tục trong một môi trường nước chung.\nTrong khi đó, đi bơi khiến vị trí xỏ tiếp xúc trực tiếp và kéo dài với lượng nước lớn hơn. Nguồn nước cũng có thể chứa vi sinh vật, hóa chất hoặc những yếu tố gây kích ứng.\nVì vậy, người mới xỏ khuyên không nhất thiết phải tránh mọi hoạt động tiếp xúc với nước. Tuy nhiên, cần giữ vùng xỏ sạch sẽ, tránh ngâm lâu và thực hiện chăm sóc theo hướng dẫn phù hợp."
+      ],
+      [
+        "Làm thế nào để biết vùng xỏ khuyên đã hồi phục?",
+        "Một trong những sai lầm thường gặp là cho rằng vùng xỏ đã lành chỉ vì bên ngoài không còn đỏ, sưng hoặc đau. Trên thực tế, quá trình hồi phục mô bên trong có thể kéo dài hơn những biểu hiện nhìn thấy trên bề mặt da.\nLỗ xỏ sụn tai đã hồi phục\nTheo DermNet, thời gian hồi phục sau khi xỏ khuyên có sự khác biệt tùy thuộc vào vị trí xỏ và các yếu tố cá nhân. Vì vậy, việc đánh giá tình trạng hồi phục cần dựa trên nhiều biểu hiện thay vì chỉ quan sát bên ngoài.\n2.1. Những biểu hiện có thể xuất hiện trong quá trình hồi phục\nTrong những tuần đầu, vùng xỏ khuyên có thể xuất hiện một số biểu hiện như:\n•\tHơi đau hoặc nhạy cảm khi vô tình chạm vào.\n•\tVùng da xung quanh hơi đỏ hoặc sẫm màu hơn bình thường.\n•\tCảm giác ngứa nhẹ trong quá trình hồi phục.\n•\tXuất hiện một lượng dịch nhạt màu và đóng thành lớp vảy mỏng quanh trang sức.\nTheo NHS, những biểu hiện như nhạy cảm, ngứa nhẹ, hơi đỏ và dịch nhạt màu đóng vảy có thể xuất hiện trong vài tuần đầu sau khi xỏ.\nTuy nhiên, cần theo dõi diễn biến của các biểu hiện này. Nếu tình trạng đau, sưng hoặc đỏ ngày càng tăng thay vì giảm dần, bạn không nên tự kết luận đó chỉ là phản ứng hồi phục thông thường.\n2.2. Vì sao không nên chỉ nhìn bề mặt để đánh giá?\nSau khi xỏ khuyên, cơ thể cần thời gian để phục hồi phần mô bị tổn thương. Trong quá trình này, bề mặt da có thể trông tương đối bình thường trước khi mô bên trong hoàn tất việc hồi phục.\nĐiều này có nghĩa là việc không còn cảm giác đau hoặc không thấy dấu hiệu bất thường bên ngoài chưa đủ để khẳng định vị trí xỏ đã lành hoàn toàn.\nMột số vị trí như sụn tai có thể cần thời gian hồi phục lâu hơn so với dái tai. Các vị trí như mũi, rốn hoặc những vùng xỏ khác cũng có đặc điểm hồi phục riêng.\nVì vậy, bạn không nên tự đặt ra thời gian đi bơi dựa trên số ngày đã trôi qua kể từ khi xỏ. Thay vào đó, hãy tham khảo hướng dẫn chăm sóc của người thực hiện xỏ khuyên có chuyên môn và tìm đến cơ sở y tế nếu có dấu hiệu bất thường."
+      ],
+      [
+        "Những dấu hiệu cần chú ý sau khi xỏ khuyên",
+        "Bên cạnh việc nhận biết các biểu hiện hồi phục thông thường, bạn cũng cần phân biệt chúng với những dấu hiệu có thể liên quan đến nhiễm trùng.\nTheo NHS, một số dấu hiệu đáng chú ý bao gồm:\n•\tVùng xỏ sưng đau hoặc nóng hơn bình thường.\n•\tDa xung quanh đỏ nhiều hoặc sẫm màu bất thường.\n•\tXuất hiện dịch mủ màu trắng, xanh hoặc vàng.\n•\tCó hiện tượng chảy máu bất thường.\n•\tCơ thể xuất hiện cảm giác sốt, ớn lạnh hoặc mệt mỏi.\nNếu nhận thấy những dấu hiệu trên, bạn nên sớm tìm đến cơ sở y tế để được kiểm tra và đánh giá. Đặc biệt, không nên tự ý tháo trang sức khi nghi ngờ nhiễm trùng, trừ khi có chỉ định của bác sĩ.\nViệc nhận biết sớm các biểu hiện bất thường giúp người xỏ khuyên chủ động hơn trong việc chăm sóc và hạn chế nguy cơ biến chứng."
+      ],
+      [
+        "Những lưu ý khi chăm sóc vùng xỏ khuyên sau khi tiếp xúc với nước",
+        "Trong trường hợp vùng xỏ vô tình tiếp xúc với nước khi đang hồi phục, bạn không nên quá hoảng sợ nhưng cần chú ý vệ sinh đúng cách.\nMột số lưu ý quan trọng bao gồm:\nVệ sinh nhẹ nhàng: Rửa tay sạch trước khi chăm sóc vùng xỏ. Sử dụng dung dịch nước muối sinh lý vô khuẩn phù hợp để vệ sinh theo hướng dẫn chăm sóc.\nGiữ vùng xỏ khô thoáng: Sau khi tắm hoặc vô tình tiếp xúc với nước, nhẹ nhàng thấm khô bằng gạc sạch hoặc vật liệu dùng một lần phù hợp. Tránh chà xát mạnh lên vị trí xỏ.\nKhông xoay hoặc nghịch trang sức: Việc liên tục chạm, xoay hoặc kéo trang sức có thể gây kích ứng và làm ảnh hưởng đến mô đang hồi phục.\nKhông tự ý sử dụng hóa chất: Tránh dùng cồn, oxy già hoặc những sản phẩm có tính tẩy rửa mạnh lên vùng xỏ nếu không có hướng dẫn chuyên môn.\nTheo dõi tình trạng vùng xỏ: Quan sát những thay đổi về màu sắc, mức độ sưng, cảm giác đau và dịch tiết để nhận biết sớm các dấu hiệu bất thường.\nNhững lưu ý này chỉ hỗ trợ việc chăm sóc vùng xỏ sau khi tiếp xúc với nước, không có nghĩa là bạn có thể chủ động đi bơi khi vị trí xỏ chưa hồi phục hoàn toàn."
+      ]
+    ],
+    "published": true,
+    "staticPath": "posts/xo-khuyen-co-di-boi-duoc-khong-nhung-dieu-can-biet-sau-khi-xo.html",
+    "updatedAt": "2026-11-24T09:01:06.990Z"
   },
   {
     slug: "kinh-nghiem-chon-tiem-xo-khuyen",
@@ -351,7 +366,7 @@ function renderFooter() {
       <div class="container footer-grid">
         <div class="footer-brand"><img src="${ASSET}logo-transparent.png" alt="Piercing Da Nang"><p>Cung cấp thông tin về các địa điểm xỏ khuyên uy tín, kiến thức và hướng dẫn chăm sóc lỗ xỏ tại Đà Nẵng.</p></div>
         <div><h3>Cam kết</h3><p>${icon("check")}Thông tin chính xác, cập nhật thường xuyên</p><p>${icon("check")}Đánh giá khách quan, minh bạch</p><p>${icon("check")}Vì cộng đồng xỏ khuyên an toàn</p></div>
-        <div><h3>Liên hệ</h3><p>${icon("phone")}0936 641 678</p><p>${icon("mail")}piercingdanang@gmail.com</p><p>${icon("pin")}52 Trần Đại Nghĩa, Ngũ Hành Sơn, Đà Nẵng</p></div>
+        <div><h3>Liên hệ</h3><p>${icon("phone")}0936 641 678</p><p>${icon("mail")}piercingdanang@gmail.com</p><p>${icon("pin")}52 Trần Đại Nghĩa, Ngũ Hành Sơn, Đà Nẵng</p><nav class="footer-social" aria-label="Mạng xã hội"><a href="https://www.tiktok.com/@_piercing.danang" target="_blank" rel="noopener noreferrer">TikTok</a><a href="https://www.instagram.com/_piercing.danang" target="_blank" rel="noopener noreferrer">Instagram</a><a href="https://www.facebook.com/piercingdanang" target="_blank" rel="noopener noreferrer">Facebook</a></nav></div>
       </div>
       <div class="container footer-bottom"><span>© 2025 Piercing Đà Nẵng. All rights reserved.</span><em>Piercing in Da Nang ♡</em></div>
     </footer>`;
@@ -408,10 +423,7 @@ function renderHome() {
         </div>
       </div>
     </section>
-    <section class="section compact-top"><div class="container">${sectionHeading("Địa điểm xỏ khuyên Đà Nẵng", "locations.html")}
-      <p class="section-lead">Bài viết, đánh giá và kinh nghiệm chọn tiệm theo từng khu vực.</p>
-      <div class="grid two">${featured.map(a=>card(a,"feature-card")).join("")}</div>
-    </div></section>
+    
     <section class="section explore-section"><div class="container">${sectionHeading("✦ Khám phá thêm về xỏ khuyên")}
       <div class="grid three explore-grid">
         <a href="trends.html" class="explore-card"><img src="${ASSET}ear-card.jpg" alt="Xu hướng xỏ khuyên"><span>Xu hướng</span><h3>Xu hướng xỏ khuyên</h3><p>Cập nhật những kiểu xỏ khuyên được yêu thích và cách phối khuyên thể hiện cá tính riêng.</p><b>Xem thêm ${icon("arrow")}</b></a>
@@ -424,10 +436,12 @@ function renderHome() {
 
 function renderLocations() {
   renderDirectory(true);
-  document.getElementById("app").insertAdjacentHTML("afterbegin", `
-    <section class="locations-article-hero">
-      <img src="${ASSET}dia-diem-xo-khuyen-da-nang.jpg" alt="Địa điểm xỏ khuyên Đà Nẵng - Gợi ý các tiệm đáng tham khảo">
-    </section>`);
+  document.getElementById("app").insertAdjacentHTML("afterbegin", hero(
+    "Địa điểm xỏ khuyên<br>tại Đà Nẵng",
+    "Khám phá các tiệm xỏ khuyên uy tín tại Đà Nẵng, xem thông tin, đánh giá và lựa chọn địa chỉ phù hợp với bạn.",
+    "✦ Địa điểm xỏ khuyên",
+    "locations-hero"
+  ));
 }
 
 function renderTrends() {
